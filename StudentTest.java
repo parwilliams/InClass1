@@ -66,7 +66,10 @@ public class StudentTest {
 		CompareLastFirstName clfn = new CompareLastFirstName();
 		
 		clfn.compare(firstStudent, secondStudent);
-		//Finish Test
+		
+		int expected = 0;
+		int actual = clfn.compare(firstStudent, secondStudent);
+		assertEquals(expected, actual);
 	}
 	
 	@Test
